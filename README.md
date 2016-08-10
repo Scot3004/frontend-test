@@ -1,34 +1,51 @@
-# Navigating with Link
+# Frontend Test Rokk3rlabs
 
-Perhaps the most used component in your app is `Link`. Its almost
-identical to the `<a/>` tag you're used to except that its aware of
-the `Router` it was rendered in.
+![](https://raw.githubusercontent.com/rokk3rlabs/frontend-test/master/logo.png)
 
-Let's create some navigation in our `App` component.
+This is the official Rokk3rlabs frontend test.
 
-```js
-// modules/App.js
-import React from 'react'
-import { Link } from 'react-router'
+## Deadline
 
-export default React.createClass({
-  render() {
-    return (
-      <div>
-        <h1>React Router Tutorial</h1>
-        <ul role="nav">
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/repos">Repos</Link></li>
-        </ul>
-      </div>
-    )
-  }
-})
-```
+The estimated time for this test is four (4) hours
 
-Now visit [http://localhost:8080](http://localhost:8080) and click the links, click back, click
-forward. It works!
+## Requirements
 
----
+You must create a single page application that displays charts to simulate an activity in real-time using the activity-data.json file.
 
-[Next: Nested Routes](../04-nested-routes/)
+
+## Dependencies
+
+* [reactjs]/[angularjs]
+* [highcharts]/[chartjs]/[d3]
+
+## TODOs (required)
+
+1. Build the markup in HTML and CSS, it consists of 2 sections (see zeplin design).
+2. Setup the project structure and integrate any modules required.
+3. Iterate the activity-data.json to simulate the activity-data in real time, these charts should be updated with activity every minute (you should make an interval every minute to show new data). Make sure to write the code needed to randomly update the original json.
+
+
+## Desirable (plus)
+
+* Responsive design
+* Managers, modules and dependencies
+* CSS pre-processors
+* Software development patterns
+* Javascript task runners ([gulpjs], [gruntjs], [brunch] ...)
+* Demo Ready
+
+
+## Important
+
+1. You must create a github repository for this test and send an email to camila@rokk3rlabs.com with repository URL and the README.md setup.
+2. Do not use any sort of frontend frameworks for the markup (such as twitter's bootstrap, foundation or similar).
+
+
+> Good luck and enjoy!
+
+[angularjs]: <https://angularjs.org/>
+[highcharts]: <http://www.highcharts.com/>
+[chartjs]: <http://www.chartjs.org/>
+[gulpjs]: <http://gulpjs.com/>
+[gruntjs]: <http://gruntjs.com/>
+[brunch]: <http://brunch.io/>
